@@ -1,0 +1,24 @@
+.lineupContainer {
+  max-width: 290px;
+  overflow-x: auto;
+  margin: 0 auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.lineup {
+  display: flex;
+  gap: 20px;
+  scroll-behavior: smooth;
+  min-width: max-content;
+}
+
+@media screen and (min-width: 375px) {
+  .lineupContainer {
+    max-width: 345px;
+  }
+}

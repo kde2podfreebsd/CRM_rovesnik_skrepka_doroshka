@@ -1,0 +1,82 @@
+.root {
+    position: relative;
+    top: 15px;
+    left: 15px;
+
+    
+    &Name {
+        position: absolute;
+        .title {
+            font-size: 27px;
+            font-weight: 500;
+            line-height: 26.6px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+    }
+
+    &Info {
+        display: flex;
+        position: absolute;
+        max-width: 80%;
+        top: 97px;
+        left: 5px;
+        p { 
+            display: flex;
+            font-size: 10px;
+            
+            span.line {
+                margin: 0 10px;
+            }
+        }
+    }
+
+    & > span {
+        position: absolute;
+        right: 35px;
+        top: 95px;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.title {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 15rem;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 375px) {
+    .root {
+        position: relative;
+        top: 15px;
+        left: 14px;
+    
+        &Name {
+            h1 {
+                font-size: 35px;
+                line-height: 33.6px;
+                letter-spacing: -2px;
+                text-transform: uppercase;
+            }    
+        }
+        &Info {
+            max-width: 80%;
+            top: 115px;
+            p { 
+                font-size: 12px;
+            }
+        }
+        & > span {
+            position: absolute;
+            top: 111px;
+            width: 16px;
+            height: 16px;
+            & > span {
+                font-size: 16px;
+            }
+        }
+    }
+}

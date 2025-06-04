@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.root {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background: #0e0f2e;
+  position: relative;
+  .main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 290px;
+    margin: 0 auto;
+
+    &AboutEvents {
+      h1 {
+        padding: 15px 0;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      p {
+        padding-bottom: 30px;
+        font-size: 14px;
+        min-width: 290px;
+        line-height: 19.2px;
+      }
+    }
+    .cardItem {
+      h2 {
+        padding-bottom: 15px;
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .lineUp {
+      & > h2 {
+        width: 290px;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 26px;
+        font-weight: 700;
+      }
+    }
+    .btnIndentation {
+      & > div {
+        margin: 10px 0 50px;
+      }
+
+      & > h3 {
+        margin: 30px 0 40px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      & > p {
+        color: red;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+  }
+  .eventDescriptionText {
+    overflow-x: scroll;
+  } 
+}
+
+.statusModal {
+  width: 70vw;
+  height: 40vw;
+  margin: auto auto;
+
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & p {
+    color: white;
+    font-size: 18px;
+  }
+
+  & div {
+    &:focus {
+      outline: none;
+    }
+
+    padding: 0 10vw;
+    display: grid;
+    gap: 1vh;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .root {
+    .main {
+      width: 345px;
+      margin: 0 auto;
+      &AboutEvents {
+        h1 {
+          padding: 15px 0;
+          font-size: 26px;
+          font-weight: 700;
+        }
+        p {
+          padding-bottom: 30px;
+          font-size: 16px;
+          width: 345px;
+          line-height: 19.2px;
+        }
+      }
+      .lineUp {
+        & > h2 {
+          width: 345px;
+          margin: 0 auto;
+          margin-top: 40px;
+          margin-bottom: 30px;
+          font-size: 26px;
+          font-weight: 700;
+        }
+      }
+      .cardItem {
+        h2 {
+          padding-bottom: 15px;
+          font-size: 18px;
+          font-weight: 600;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .btnIndentation {
+        & > h3 {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .alreadyPurchasedButton {
+      margin: 30px 0;
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+.lightRoot {
+  background: #efeff3;
+  color: #1c1c1c;
+}
+
+.darkRoot {
+  background: #1c1c1c;
+  color: white;
+}

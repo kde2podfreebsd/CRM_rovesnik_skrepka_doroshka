@@ -1,0 +1,65 @@
+.root {
+  .guestInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    & > button {
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .infoInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 290px;
+    color: white;
+    & > input {
+      background: rgba(30, 39, 76, 1);
+      border: 0;
+      border-radius: 100px;
+      &::placeholder {
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .root {
+    margin: 0 auto;
+    width: 345px;
+
+    .infoInputs {
+      width: 345px;
+
+      & > input {
+        &::placeholder {
+          color: #fff;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+
+.root {
+  .infoInputs {
+    .inputLight {
+      background-color: #ffffff; 
+      color: #000000; 
+    }
+    
+    .inputDark {
+      background-color: #000000; 
+      color: #ffffff; 
+    }
+  }
+}

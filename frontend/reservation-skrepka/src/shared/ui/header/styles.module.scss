@@ -1,0 +1,81 @@
+.root {
+  display: flex;
+
+  height: 60px;
+  width: 100%;
+  background-color: rgb(14, 15, 46);
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+
+  .container {
+    min-width: 290px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.header {
+  &Text {
+    line-height: 14px;
+    font-size: 10px;
+    font-weight: 400;
+    color: #fff;
+  }
+  &Logo {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  &Nav {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .root {
+    .container {
+      min-width: 345px;
+    }
+  }
+
+  .header {
+    &Text {
+      font-size: 11px;
+    }
+    &Logo {
+      font-size: 11px;
+    }
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .root {
+    .container {
+      min-width: 360px;
+    }
+  }
+
+  .header {
+    &Text {
+      font-size: 12px;
+    }
+    &Logo {
+      font-size: 12px;
+    }
+  }
+}
+
+
+.lightRoot {
+  background-color: #EFEFF3;
+  color: #1C1C1C;
+}
+
+.darkRoot {
+  background-color: #1C1C1C;
+  color: white;
+}

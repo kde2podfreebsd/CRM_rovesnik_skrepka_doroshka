@@ -1,0 +1,172 @@
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  color: black;
+  .content {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    width: 290px;
+
+    img {
+      width: 220px;
+      height: 220px;
+      height: auto;
+      margin: 15px auto 0;
+      border-radius: 30px;
+    }
+
+    .status {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .shortName {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 28.6px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .dateTime {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21.6px;
+      text-align: center;
+      margin-top: 10px;
+
+    }
+
+    .barInfo {
+      margin-top: 30px;
+
+      p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        line-height: 21.6px;
+        margin: 5px 0;
+      }
+      p:first-child {
+        font-weight: 600;
+      }
+      p > span {
+        font-size: 10px;
+      }
+    }
+  }
+}
+.statusActive,
+.statusCompleted {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.4px;
+  margin-top: 20px;
+}
+
+.statusActive {
+  color: white;
+  background: #3478f6;
+  padding: 4px 9px;
+  border-radius: 30px;
+  transition: 0.5s all;
+}
+
+.statusCompleted {
+  color: black;
+  background: #98989e;
+  padding: 4px 9px;
+  border: 1px solid #98989e;
+  border-radius: 30px;
+  transition: 0.5s all;
+}
+
+@media screen and (min-width: 375px) {
+  .modalContainer {
+    
+    .content {
+      text-align: center;
+      padding: 20px;
+      border-radius: 30px;
+      width: 345px;
+  
+      img {
+        width: 220px;
+        height: 220px;
+        height: auto;
+        margin: 15px auto 0;
+        border-radius: 30px;
+      }
+  
+      .status {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .shortName {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 28.6px;
+        text-align: center;
+        margin-top: 30px;
+      }
+  
+      .dateTime {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.6px;
+        text-align: center;
+        margin-top: 10px;
+  
+      }
+  
+      .barInfo {
+        margin-top: 30px;
+  
+        p {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 18px;
+          line-height: 21.6px;
+          margin: 5px 0;
+        }
+        p:first-child {
+          font-weight: 600;
+        }
+        p > span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+ 
+  
+}
+
+
+.lightThemeModal {
+  .lightTheme {
+
+  }
+}
+.darkThemeModal {
+  color: white;
+  .darkTheme {
+    background: #000;
+  }
+}

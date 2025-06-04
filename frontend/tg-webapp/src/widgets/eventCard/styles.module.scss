@@ -1,0 +1,88 @@
+
+.root {
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 290px;
+  height: 190px;
+  color: white !important;
+  margin-bottom: 15px;
+
+  font-size: 12px;
+  border-radius: 30px;
+  border: 1px solid #3478f6;
+  .buttonBuy {
+    display: flex;
+    position: absolute;
+    bottom: 11px;
+    left: 15px;
+  }
+
+  &Time {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 30px;
+    line-height: 21.6px;
+  }
+}
+
+.multiButtonContainer {
+  display: flex;
+  flex-direction: row;
+
+  div:nth-child(1) {
+    width: 45% !important;
+    left: 15px !important;
+  }
+
+  div:nth-child(2) {
+    width: 45% !important;
+    right: 15px;
+    left: unset !important
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .root {
+    position: relative;
+
+    width: 345px;
+    height: 224px;
+
+    border-radius: 30px;
+
+    &Time {
+      font-size: 18px;
+    }
+  }
+}
+
+// QRCode
+
+.modal {
+  position: relative;
+
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  outline: none;
+
+  .qrCodeContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 290px;
+    height: 290px;
+    border: none;
+    outline: none;
+  }
+}

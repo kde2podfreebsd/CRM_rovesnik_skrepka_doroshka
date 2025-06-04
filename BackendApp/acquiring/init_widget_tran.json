@@ -1,0 +1,132 @@
+{
+  "TerminalKey": "25208632",
+  "paymentInfo": {
+    "InfoEmail": "lol@gmail.com",
+    "PaymentData": {
+      "TerminalKey": "1702233615340DEMO",
+      "Amount": 1751,
+      "OrderId": "1",
+      "Description": "lopl",
+      "DATA": {},
+      "Receipt": {
+        "Items": [
+          {
+            "Name": "Наименование товара 1",
+            "Price": 10000,
+            "Quantity": 1,
+            "Amount": 10000,
+            "PaymentMethod": "full_prepayment",
+            "PaymentObject": "commodity",
+            "Tax": "vat10",
+            "Ean13": "0123456789",
+            "ShopCode": "12345",
+            "AgentData": {
+              "AgentSign": "paying_agent",
+              "OperationName": "Позиция чека",
+              "Phones": [
+                "+790912312398"
+              ],
+              "ReceiverPhones": [
+                "+79221210697",
+                "+79098561231"
+              ],
+              "TransferPhones": [
+                "+79221210697"
+              ],
+              "OperatorName": "Tinkoff",
+              "OperatorAddress": "г. Тольятти",
+              "OperatorInn": "7710140679"
+            },
+            "SupplierInfo": {
+              "Phones": [
+                "+79221210697",
+                "+79098561231"
+              ],
+              "Name": "ООО Вендор товара",
+              "Inn": "7710140679"
+            }
+          }
+        ],
+        "FfdVersion": "1.05",
+        "Email": "a@test.ru",
+        "Phone": "+79031234567",
+        "Taxation": "osn",
+        "Payments": {
+          "Cash": 90000,
+          "Electronic": 50000,
+          "AdvancePayment": 0,
+          "Credit": 0,
+          "Provision": 0
+        }
+      }
+    }
+  },
+  "paymentItems": [
+    {
+      "paymentInfo": {
+        "InfoEmail": "loodkg@mail.ru",
+        "PaymentData": {
+          "TerminalKey": "1702233615340DEMO",
+          "Amount": 1751,
+          "OrderId": "1",
+          "Description": "dgdg",
+          "DATA": {},
+          "Receipt": {
+            "Items": [
+              {
+                "Name": "Наименование товара 1",
+                "Price": 10000,
+                "Quantity": 1,
+                "Amount": 10000,
+                "PaymentMethod": "full_prepayment",
+                "PaymentObject": "commodity",
+                "Tax": "vat10",
+                "Ean13": "0123456789",
+                "ShopCode": "12345",
+                "AgentData": {
+                  "AgentSign": "paying_agent",
+                  "OperationName": "Позиция чека",
+                  "Phones": [
+                    "+790912312398"
+                  ],
+                  "ReceiverPhones": [
+                    "+79221210697",
+                    "+79098561231"
+                  ],
+                  "TransferPhones": [
+                    "+79221210697"
+                  ],
+                  "OperatorName": "Tinkoff",
+                  "OperatorAddress": "г. Тольятти",
+                  "OperatorInn": "7710140679"
+                },
+                "SupplierInfo": {
+                  "Phones": [
+                    "+79221210697",
+                    "+79098561231"
+                  ],
+                  "Name": "ООО Вендор товара",
+                  "Inn": "7710140679"
+                }
+              }
+            ],
+            "FfdVersion": "1.05",
+            "Email": "a@test.ru",
+            "Phone": "+79031234567",
+            "Taxation": "osn",
+            "Payments": {
+              "Cash": 90000,
+              "Electronic": 50000,
+              "AdvancePayment": 0,
+              "Credit": 0,
+              "Provision": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "paymentSystems": {
+    "TinkoffPay": {}
+  }
+}

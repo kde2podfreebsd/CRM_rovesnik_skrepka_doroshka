@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "947373f9-bbd0-44c5-8e91-51a570e04e71",
+		"name": "Rovesnik",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10258449"
+	},
+	"item": [
+		{
+			"name": "Get event by event_id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/event/3",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"event",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/1/events",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"1",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload image",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/download_image?file_path=/home/donqhomo/Desktop/orders/CRM-Rovesnik-Doroshka-Screpka/BackendApp/qr_codes/406149871.png",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"download_image"
+					],
+					"query": [
+						{
+							"key": "file_path",
+							"value": "/home/donqhomo/Desktop/orders/CRM-Rovesnik-Doroshka-Screpka/BackendApp/qr_codes/406149871.png"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user tickets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/tickets/406149871",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tickets",
+						"406149871"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ticket by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/ticket/3",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ticket",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "purchase_ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/purchase_ticket?event_id=2&client_chat_id=406149871",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_ticket"
+					],
+					"query": [
+						{
+							"key": "event_id",
+							"value": "2"
+						},
+						{
+							"key": "client_chat_id",
+							"value": "406149871"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "purchase_free_ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"event_id\": 2,\n    \"client_chat_id\": 406149871,\n    \"friends\": [\n        {\"name\": \"Friend1\", \"username\": \"username1\"},\n        {\"name\": \"Friend2\", \"username\": \"username2\"}\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/purchase_free_ticket",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_free_ticket"
+					],
+					"query": [
+						{
+							"key": "event_id",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "client_chat_id",
+							"value": "406149871",
+							"disabled": true
+						},
+						{
+							"key": "friends",
+							"value": "[{\"name\": \"Friend1\", \"username\": \"username1\"}, {\"name\": \"Friend2\", \"username\": \"username2\"}]",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

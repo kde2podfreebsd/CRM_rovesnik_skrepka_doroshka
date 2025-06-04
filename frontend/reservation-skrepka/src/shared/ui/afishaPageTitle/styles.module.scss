@@ -1,0 +1,28 @@
+.title {
+  min-width: 290px;
+
+  margin: 20px 0 15px 0;
+  p {
+    font-size: 22px;
+      font-weight: 600;
+      line-height: 24.6px;
+      width: 200px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .title {
+    min-width: 345px;
+
+    p {
+      font-size: 26px;
+      line-height: 28.6px;
+      width: 242px;
+    }
+  }
+}
+@media screen and (min-width: 425px) {
+  .title {
+    font-size: 15px;
+  }
+}

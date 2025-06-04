@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$bgImage: url('../../shared/assets/background.svg');
+
+.root {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background: #0e0f2e;
+
+  .main {
+    display: flex;
+    flex-direction: column;
+
+    width: 290px;
+    margin: 0 auto;
+
+    & > h1 {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 28.6px;
+      margin: 20px 0;
+    }
+    & > p {
+      font-size: 14px;
+      line-height: 19.2px;
+      margin: 0 0 20px 0;
+    }
+
+    .btnTypeChange {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      width: 290px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+
+      & > button {
+        font-size: 14px;
+        position: relative;
+        padding-bottom: 8px;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          width: 91px;
+          height: 1.8px;
+          background-color: rgba(55, 55, 55, 1);
+          bottom: 0;
+          transition: background-color 0.3s ease-in-out;
+        }
+
+        &::before {
+          left: 0;
+        }
+
+        &::after {
+          right: 0;
+        }
+
+        &.active {
+          &::before,
+          &::after {
+            background-color: #3478f6;
+          }
+        }
+      }
+    }
+    .submitReserve {
+      margin: 30px 0 70px;
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .root {
+    .main {
+      width: 345px;
+      margin: 0 auto;
+
+      .btnTypeChange {
+        & > button {
+          font-size: 16px;
+
+          &::before,
+          &::after {
+            width: 100.5px;
+            height: 1.8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// MODAL CONTENT
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  .modalContent {
+    position: relative;
+    outline: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(88, 97, 202, 1);
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    width: 290px;
+    text-align: center;
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .closeCrossButton1 {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+
+      width: 17px;
+      height: 17px;
+    }
+    .closeCrossButton2 {
+      position: absolute;
+      right: 35px;
+      top: 230px;
+
+      width: 17px;
+      height: 17px;
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .modal {
+    .modalContent {
+      width: 345px;
+
+      h1 {
+        font-size: 26px;
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+// BarMap & Arrows
+
+.arrowsBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  & > p {
+    margin: 0 20px 0;
+  }
+}
+
+.lightRoot {
+  background-color: #efeff3;
+  color: #1c1c1c;
+}
+
+.darkRoot {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.root {
+  .buttonDark {
+    & > button {
+      color: white;
+    }
+  }
+}
+
+.modal {
+  .modalContentLight {
+    background-color: white;
+    color: black;
+  }
+  .modalContentDark {
+    background-color: black;
+    color: white;
+  }
+}

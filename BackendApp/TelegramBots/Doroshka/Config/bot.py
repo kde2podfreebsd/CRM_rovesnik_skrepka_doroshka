@@ -1,0 +1,29 @@
+import os
+
+from dotenv import load_dotenv
+from telebot.async_telebot import AsyncTeleBot
+from telebot.asyncio_filters import (
+    ForwardFilter,
+    IsDigitFilter,
+    IsReplyFilter,
+    StateFilter,
+)
+from telebot.asyncio_handler_backends import State, StatesGroup
+from telebot.asyncio_storage import StateMemoryStorage
+
+load_dotenv()
+
+bot = AsyncTeleBot(
+    str(os.getenv("DOROSHKA_TELEGRAM_BOT_TOKEN")),
+    state_storage=StateMemoryStorage(),
+)
+
+
+class MyStates(StatesGroup):
+    get_password_message = State()
+    get_additional_message = State()
+    get_agent_id_message = State()
+    get_new_request = State()
+
+
+provider_token = os.getenv("DOROSHKA_PAYMENT_TOKEN")

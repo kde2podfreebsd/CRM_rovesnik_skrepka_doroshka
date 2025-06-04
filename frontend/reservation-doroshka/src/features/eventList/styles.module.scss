@@ -1,0 +1,35 @@
+.container {
+    
+
+
+    .description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 10px;
+        margin-left: 10px;
+
+        font-size: 8px;
+    }
+}
+
+
+@media screen and (min-width: 425px) {
+    .container {
+
+        .description {
+            font-size: 10px;
+            max-width: 315px;
+        }
+    }
+}
+@media screen and (min-width: 425px) {
+    .container {
+
+        .description {
+            font-size: 10px;
+            max-width: 315px;
+        }
+    }
+}

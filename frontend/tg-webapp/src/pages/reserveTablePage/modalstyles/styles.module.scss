@@ -1,0 +1,138 @@
+.root {
+  width: 290px;
+  .formFieldInfo {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    .fieldName {
+      background: rgba(30, 39, 76, 1);
+      border: none;
+      border-radius: 30px;
+
+      height: 42px;
+      &::placeholder {
+        color: white;
+        font-size: 14px;
+      }
+    }
+    .fieldGuestCount {
+      background: rgba(30, 39, 76, 1);
+      height: 42px;
+      border-radius: 30px;
+      color: #fff;
+      font-size: 14px;
+      position: relative;
+      border: none;
+    }
+  }
+  .formFieldInfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formFieldDate {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    margin-bottom: 10px;
+
+    .fieldDate {
+      background: rgba(30, 39, 76, 1);
+      border-radius: 30px;
+      height: 42px;
+      width: 50%;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .fieldTime {
+      background: rgba(30, 39, 76, 1);
+      border-radius: 30px;
+      height: 42px;
+      width: 50%;
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+  .btnSubmit {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .root {
+    width: 345px;
+    .formFieldInfo {
+      .fieldName {
+        height: 46px;
+        &::placeholder {
+          font-size: 16px;
+        }
+      }
+      .fieldGuestCount {
+        height: 46px;
+        font-size: 16px;
+      }
+    }
+
+    .formFieldDate {
+      .fieldDate {
+        height: 46px;
+        font-size: 16px;
+      }
+
+      .fieldTime {
+        height: 46px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.root {
+  .formFieldInfo {
+    .fieldNameLight {
+      background: #fff;
+      color: black;
+      &::placeholder {
+        color: black;
+        font-weight: 500;
+      }
+    }
+    .fieldNameDark {
+      background: #000;
+      &::placeholder {
+        color: white;
+        font-weight: 500;
+      }
+    }
+
+    .fieldGuestCountLight {
+      background: #fff;
+      color: black;
+    }
+    .fieldGuestCountDark {
+      background: #000;
+      color: white;
+    }
+  }
+  .formFieldDate {
+    .fieldDateLight {
+      background: #fff;
+      color: black;
+    }
+    .fieldDateDark {
+      background: black;
+      color: white;
+    }
+    .fieldTimeLight {
+      background: #fff;
+      color: black;
+    }
+    .fieldTimeDark {
+      background: black;
+      color: white;
+    }
+  }
+}
